@@ -1,0 +1,79 @@
+<!DOCTYPE html> <html>
+<style>
+  .red-text {
+    color: rosybrown;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: arial;
+  }
+</style>
+<h1 class="red-text"> VIT registration </h1>
+
+<body> 
+	<div style="background-image: url('file:///Users/sanikachavan/Downloads/Assets/Pictures/smokies@3x.jpg');">
+  <form style="color: darkblue; font-family: sans-serif; font-style: arial; font-size: 15px;">
+Name: <input type="text" style="border: 0px solid; " placeholder="Enter name here">
+<br><br>
+
+Employee No: <input type="red-text" style="border: 0px solid; " placeholder="Enter your employee no">
+<br><br>
+
+School Education Details: 
+   <label for="CBSE">
+  <input type="radio" name="CBSE">CBSE</label> 
+   <label for ="SSC">
+  <input type="radio" name="SSC">SSC</label> 
+   <label for ="SSC">
+  <input type="radio" name="ICSE">ICSE</label> 
+   <label for ="IGCSE">
+  <input type="radio" name="IGCSE">IGCSE</label> 
+   <label for ="International">
+  <input type="radio" name="International">International</label> 
+   <label for ="state">
+  <input type="radio" name="state">state</label> 
+	  <label for="IFCSE">
+  <input type="radio" name="IFCSE">IFCSE</label> 
+  <br><br>
+
+VIT E-mail:<input type="email" name="email" style="border: 0px solid; " placeholder="Enter VIT mail ID">
+	<br><br>
+  
+Country:<input type="text" name="country" style=" color: white; border: 0px solid; " placeholder="Enter your country">
+	<br><br> 
+
+Date:<input type="date" name="Birthday" style="border: 0px solid; " >
+	<br><br>
+
+DateOfSubmission:<input type="Date" name="date" style="border: 0px solid; " >
+  <br><br>
+
+Educational Details: 
+	<label for="MS"><input id="MS" type="checkbox" name="MS"> MS</label>
+    <label for="MBA"><input id="MBA" type="checkbox" name="MBA"> MBA</label><br>
+    <label for="PhD"><input id="PhD" type="checkbox" name="Phd"> PhD</label><br>
+
+Graduation Field:
+	<label for="CS"><input id="Field" type="radio" name="CS"> CS</label>
+    <label for="IT"><input id="IT" type="radio" name="IT"> IT</label>    
+    <label for="EXTC"><input id="EXTC" type="radio" name="EXTC"> EXTC</label><br><br>
+
+Experience in years:<input type="number" min="0" mac="50"
+value="2"required style="border: 0px solid; " >
+<br><br>
+
+Portfolio: <input type="url" placeholder="Enter url here" style="border: 0px solid; " >
+<br><br>
+
+Contact Number:<input type="text" placeholder="Enter Mobile Number" pattern="{10}" style="border: 0px solid; " >
+<br><br>
+
+<form action="uplaod.php" method="post" enctype="multipart/form-data">Upload Resume: <input type="file" name="fileToUpload" id="fileToUpload" style="border: 0px solid; " ><br>
+  <input type="submit" value="Upload Selected File" name="submit" style="border: 0px solid; " >(PDF only)
+</form>
+
+<br><br>
+<button id="myBtn" onclick="javascript:alert('submitted!')" style="border: 4px solid; " >Submit</button>
+</body>
